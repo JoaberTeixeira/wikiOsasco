@@ -99,7 +99,7 @@ h3 {
     color: black;
 }
 
-/* Fundo visível e efeito zebra */
+
 .player-table tbody tr:nth-child(odd) td {
     background-color: rgba(0, 0, 0, 0.774);
 }

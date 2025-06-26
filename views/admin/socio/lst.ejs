@@ -76,7 +76,7 @@
             padding: 50px 20px 40px;
             max-width: 1000px;
             margin: 100px auto;
-            background-color: rgba(0, 0, 0, 0.541);
+            background-color: #0000008a;
             border-radius: 10px;
         }
 
@@ -91,7 +91,7 @@
             margin-bottom: 20px;
             color: #ffffff;
             font-weight: bold;
-            background: #4CAF50;
+            background: #ff9100;
             padding: 10px;
             border-radius: 5px;
             text-decoration: none;
@@ -101,14 +101,14 @@
         }
 
         .add-link:hover {
-            background: #45a049;
+            background: #ff5e00;
         }
 
         table {
             width: 100%;
             border-collapse: collapse;
-            background-color: #4d4d4d;
-            color: black;
+            background-color: #0000008c;
+            color: rgb(255, 255, 255);
         }
 
         th, td {
@@ -118,8 +118,8 @@
         }
 
         th {
-            background-color: #d9a94f;
-            color: black;
+            background-color: #ffa600;
+            color: rgb(0, 0, 0);
         }
 
         a.action-link {
@@ -155,7 +155,6 @@
 
     <div class="container">
         <h1>Lista de Sócios</h1>
-        <a class="add-link" href="/admin/Socio/add">Adicionar Novo Sócio</a>
 
         <table>
             <thead>
@@ -180,6 +179,7 @@
                 <% }) %>
             </tbody>
         </table>
+        <a class="add-link" href="/admin/Socio/add">Adicionar Novo Sócio</a>
     </div>
 
 </body>

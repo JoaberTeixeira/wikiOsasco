@@ -1,174 +1,147 @@
-/* Resetando margens e padding */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-/* Estilo geral */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #bad2f7;
-    color: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 20px;
+    background-image: url('https://source.unsplash.com/1600x900/?volleyball');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: rgb(255, 255, 255);
+    background-color: #9b6f36;
 }
 
 .Imenor{
-    width: 25%;
-    height: 25%;
+width: 25%;
+height: 25%;
 }
-
-/* Container principal */
-.container {
-    width: 90%;
-    max-width: 1200px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-/* Títulos */
-h3 {
-    color: #007bff;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-/* Formulários e campos de entrada */
-form {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    max-width: 400px;
+    background: #000000a1;
+    padding: 20px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-label {
-    display: block;
-    font-size: 14px;
-    margin-bottom: 5px;
-    color: #555;
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
-input[type="text"],
-input[type="number"],
-select {
-    width: 100%;
+.logo-container img {
+    height: 50px;
+}
+
+.logo-text {
+    font-size: 32px;
+    font-weight: bold;
     padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 14px;
-    color: #555;
+    border-radius: 10px;
 }
 
-input:focus,
-select:focus {
-    border-color: #007bff;
-    outline: none;
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
-/* Botões */
-button,
-.btn {
-    width: 100%;
-    padding: 12px;
-    background-color: #007bff;
+nav a {
+    text-decoration: none;
     color: white;
-    border: none;
+    font-weight: bold;
+    padding: 12px 16px;
     border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    background: #d9a94f;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background: #c9732c;
+}
+
+.container {
+    padding: 50px 20px 40px;
+    max-width: 1000px;
+    margin: 100px auto;
+    background-color: #0000008a;
+    border-radius: 10px;
+}
+
+h3 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    text-align: center;
+}
+
+.player-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.player-table th,
+.player-table td {
+    border: 1px solid #000000;
+    padding: 10px;
+}
+
+.player-table th {
+    background-color: #ffa600;
+    color: black;
+}
+
+/* Fundo visível e efeito zebra */
+.player-table tbody tr:nth-child(odd) td {
+    background-color: rgba(0, 0, 0, 0.774);
+}
+
+.player-table tbody tr:nth-child(even) td {
+    background-color: #b1b1b1e6;
+}
+
+.edit,
+.delete,
+.btn {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 4px 2px;
+    border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
 }
 
-button:hover,
-.btn:hover {
-    background-color: #0056b3;
-}
-
-button:active,
-.btn:active {
-    background-color: #00408a;
-}
-
-/* Botões de ação */
-.add-player,
-.add-team,
-.ir-time {
-    text-align: right;
-    margin-bottom: 20px;
-}
-
-/* Estilo da tabela */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-}
-
-th,
-td {
-    padding: 10px;
-    text-align: left;
-    border: 1px solid #ccc;
-}
-
-th {
-    background-color: #f9f9f9;
-    color: #007bff;
-}
-
-tr:nth-child(even) {
-    background-color: #f9f9f9;
-}
-
-tr:hover {
-    background-color: #e2e2e2;
-}
-
-/* Links */
-a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Ações */
 .edit {
-    color: #007bff;
-}
-
-.edit:hover {
-    color: #0056b3;
+    background-color: #4CAF50;
+    color: white;
 }
 
 .delete {
-    color: #ff5733;
+    background-color: #f44336;
+    color: white;
 }
 
-.delete:hover {
-    text-decoration: underline;
+.btn {
+    background-color: #ff9100;
+    color: white;
 }
 
-.time-container {
-    width: 90%;
-    max-width: 450px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgb(255, 153, 0);
+.btn:hover {
+    background-color: #ff5e00;
+}
+
+.add-player {
     text-align: center;
+}
+
+h3 {
+    color: white;
 }
